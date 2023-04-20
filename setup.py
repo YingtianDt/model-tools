@@ -15,9 +15,10 @@ requirements = [
     "tqdm",
     "torch",
     "torchvision",
+    # "tensorflow",
     "keras==2.3.1",
     "protobuf<4",  # keras import fails on newer protobuf http://braintree.mit.edu:8080/job/unittest_model_tools/132/
-    "scikit-learn",
+    # "scikit-learn",
     "result_caching @ git+https://github.com/brain-score/result_caching",
 ]
 
