@@ -8,7 +8,7 @@ with open('README.md') as readme_file:
 
 requirements = [
     "brainio @ git+https://github.com/brain-score/brainio",
-    "brain-score @ git+https://github.com/YingtianDt/brain-score",
+    "git+https://github.com/YingtianDt/brain-score.git@ytang#egg=brain-score",
     "h5py",
     "Pillow",
     "numpy",
@@ -18,7 +18,7 @@ requirements = [
     # "tensorflow",
     "keras==2.3.1",
     "protobuf<4",  # keras import fails on newer protobuf http://braintree.mit.edu:8080/job/unittest_model_tools/132/
-    # "scikit-learn",
+    "scikit-learn",
     "result_caching @ git+https://github.com/brain-score/result_caching",
 ]
 
@@ -29,7 +29,7 @@ setup(
     long_description=readme,
     author="Martin Schrimpf",
     author_email='mschrimpf@mit.edu',
-    url='https://github.com/YingtianDt/model-tools',
+    url='https://github.com/brain-score/model-tools',
     packages=find_packages(exclude=['tests']),
     include_package_data=True,
     install_requires=requirements,
