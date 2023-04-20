@@ -29,7 +29,7 @@ setup(
     long_description=readme,
     author="Martin Schrimpf",
     author_email='mschrimpf@mit.edu',
-    url='https://github.com/brain-score/model-tools',
+    url='https://github.com/YingtianDt/model-tools',
     packages=find_packages(exclude=['tests']),
     include_package_data=True,
     install_requires=requirements,
