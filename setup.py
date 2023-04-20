@@ -8,14 +8,14 @@ with open('README.md') as readme_file:
 
 requirements = [
     "brainio @ git+https://github.com/brain-score/brainio",
-    "brain-score @ git+https://github.com/brain-score/brain-score",
+    "brain-score @ git+https://github.com/YingtianDt/brain-score",
     "h5py",
     "Pillow",
     "numpy",
     "tqdm",
     "torch",
     "torchvision",
-    "tensorflow==1.15",
+    "tensorflow<2",
     "keras==2.3.1",
     "protobuf<4",  # keras import fails on newer protobuf http://braintree.mit.edu:8080/job/unittest_model_tools/132/
     "scikit-learn",
