@@ -8,7 +8,7 @@ with open('README.md') as readme_file:
 
 requirements = [
     "brainio @ git+https://github.com/brain-score/brainio",
-    "git+https://github.com/YingtianDt/brain-score.git@ytang#egg=brain-score",
+    "brain-score",
     "h5py",
     "Pillow",
     "numpy",
@@ -42,6 +42,9 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
         'Programming Language :: Python :: 3.7',
+    ],
+    dependency_links=[
+        "git+https://github.com/YingtianDt/brain-score.git@ytang#egg=brain-score",
     ],
     test_suite='tests',
 )
